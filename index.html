@@ -34,10 +34,10 @@
 
         <div class="text-gray-400 space-x-5 hidden list md:flex text-right space-y-5 md:space-y-0 mt-5 md:mt-0">
           <button class="close hover:text-gray-50 text-left md:hidden"><i class="fas fa-times"></i></button>
-          <a href="#home" class="hover:text-gray-50 block">Home</a>
-          <a href="#about" class="hover:text-gray-50 block">About</a>
-          <a href="#testimony" class="hover:text-gray-50 block">Testimony</a>
-          <a href="#contact" class="hover:text-gray-50 block">Contact</a>
+          <a href="#home" class="hover:text-gray-50 block nav-list">Home</a>
+          <a href="#about" class="hover:text-gray-50 block nav-list">About</a>
+          <a href="#testimony" class="hover:text-gray-50 block nav-list">Testimony</a>
+          <a href="#contact" class="hover:text-gray-50 block nav-list">Contact</a>
         </div>
       </div>
     </div>
@@ -228,6 +228,14 @@
     close.addEventListener('click', function (){
       open.classList.toggle('hidden')
       list.classList.toggle('hidden')
+    })
+
+    // solved list mobile
+    const navList = document.querySelectorAll('.nav-list')
+    navList.forEach(list => {
+        if(!list.classList.contains('hidden')){
+            list.classList.toggle('hidden')
+        }
     })
   </script>
 
