@@ -1,54 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="description" content="SMK TELKOM JAKARTA"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Domine&family=Rubik:wght@300&display=swap" rel="stylesheet">
-    <link rel="icon" href="img/icon-ts-1.png">
-    <script src="https://cdn.tailwindcss.com"></script> 
-    <link rel="stylesheet" href="icons/css/all.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <title>Rekayasa Perangkat Lunak</title>
+<?php
 
-    <style>
-      .font-rubik {
-        font-family: 'Rubik';
-      }
-      .bg-blue-900-2 {
-        background-color: #312d81;
-      }
-    </style>
-</head>
-<body class="font-rubik">
-  <nav class="bg-gradient-to-r from-indigo-700 to-blue-900 w-full py-4 fixed z-20">
-    <div class="container px-5 md:px-10">
-      <div class="flex justify-between md:items-center">
-        <div class="brand">
-          <a href="/rpl"><img src="img/smktelkomjkt.jpg" class="w-28 h-auto" alt=""></a>
-        </div>
+include_once "./layouts/header.php"
 
-        <button class="open block md:hidden text-gray-400 hover:text-gray-50"><i class="fas fa-bars"></i></button>
+?>
 
-        <div class="text-gray-400 space-x-5 hidden list md:flex text-right space-y-5 md:space-y-0 mt-5 md:mt-0">
-          <button class="close hover:text-gray-50 text-left md:hidden"><i class="fas fa-times"></i></button>
-          <a href="#home" class="hover:text-gray-50 block nav-list">Home</a>
-          <a href="#about" class="hover:text-gray-50 block nav-list">About</a>
-          <a href="#testimony" class="hover:text-gray-50 block nav-list">Testimony</a>
-          <a href="#contact" class="hover:text-gray-50 block nav-list">Contact</a>
-        </div>
-      </div>
-    </div>
-  </nav>
+<?php
+
+include_once "./layouts/navbar.php"
+
+?>
 
 <section id="home" class="w-full">
   <div class="bg-indigo-900 w-full h-auto py-32 pb-20">
     <div class="container px-5 md:px-10 mx-auto">
       <div class="md:flex md:justify-between md:items-center">
-        <div class="mb-5 md:mb-0" data-aos="fade-right">
+        <div class="mb-5 md:mb-0">
           <div class="title mb-3">
             <h3 class="text-white text-4xl lg:text-6xl">RPL</h3>
             <h5 class="text-white text-2xl lg:text-4xl">Rekayasa Perangkat Lunak</h5>
@@ -57,7 +23,7 @@
             ( RPL berkaitan dengan software komputer mulai dari pembuatan website, aplikasi, game dan semua yang berkaitan dengan pemrograman dengan menguasai bahasa pemrograman tersebut. )
           </p>
         </div>
-        <div data-aos="fade-left">
+        <div>
           <img src="img/title.jpg" alt="">
         </div>
       </div>
@@ -100,26 +66,26 @@
       </div>
       <div class="container mx-auto px-5 md:px-10 mt-24">
         <div class="md:flex md:justify-around md:gap-16 space-y-10 md:space-y-0 mb-10">
-          <div class="md:w-3/6" data-aos="fade-right">
+          <div class="md:w-3/6">
             <h3 class="font-bold text-xl"><i class="fas fa-info-circle text-blue-500"></i> Tujuan.</h3>
             <p>Secara khusus tujuan Kompetensi Keahlian Rekayasa Perangkat Lunak (RPL) adalah membekali peserta didik dengan keterampilan, pengetahuan dan sikap agar kompeten: Membuat program aplikasi berbasis web (Web Base Application). Membuat program aplikasi pengelolaan database (Database Management System). Dan lain lain.</p>
             <div class="mt-5">
               <div class="w-3/6 md:w-2/6 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 h-2 rounded-full"></div>
             </div>
           </div>
-          <div data-aos="fade-left">
+          <div>
             <img src="img/about.jpg" class="w-80 mx-auto" alt="">
           </div>
         </div>
         <div class="md:flex md:justify-around md:gap-16 space-y-10 md:space-y-0">
-          <div class="md:w-3/6" data-aos="fade-right">
+          <div class="md:w-3/6">
             <h3 class="font-bold text-xl"><i class="fas fa-info-circle text-blue-500"></i> Prospek Kerja.</h3>
             <p>Peluang karier yang bisa diambil lulusan RPL, di antaranya software engineer, software programmer, mobile computing development, IT consultant, system analyst, game developer, software tester, dan lain-lain.</p>
             <div class="mt-5">
               <div class="w-3/6 md:w-2/6 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 h-2 rounded-full"></div>
             </div>
           </div>
-          <div data-aos="fade-left">
+          <div>
             <img src="img/about2.jpg" class="w-80 mx-auto" alt="">
           </div>
         </div>
@@ -224,38 +190,9 @@
   </div>
     
 
-  <script>
-    const open = document.querySelector('.open');
-    const close = document.querySelector('.close')
-    const list = document.querySelector('.list')
 
-    open.addEventListener('click', function (){
-      open.classList.toggle('hidden')
-      list.classList.toggle('hidden')
-    })
+<?php
 
-    close.addEventListener('click', function (){
-      open.classList.toggle('hidden')
-      list.classList.toggle('hidden')
-    })
+include_once "./layouts/footer.php"
 
-    // solved list mobile
-    const navList = document.querySelectorAll('.nav-list')
-    navList.forEach(nav => {
-        nav.addEventListener('click', function (){
-          if(!list.classList.contains('hidden')){
-            open.classList.toggle('hidden')
-            list.classList.toggle('hidden')
-          }
-        })
-    })
-
-  </script>
-
-    <script src="icons/js/all.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-</body>
-</html>
+?>
