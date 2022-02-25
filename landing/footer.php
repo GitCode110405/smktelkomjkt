@@ -1,5 +1,4 @@
-
-  <script>
+<script>
     const open = document.querySelector('.open');
     const close = document.querySelector('.close')
     const list = document.querySelector('.list')
@@ -26,7 +25,10 @@
     })
 
   </script>
-
-    <script src="../icons/js/all.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+    <script src="icons/js/all.js"></script>
 </body>
 </html>

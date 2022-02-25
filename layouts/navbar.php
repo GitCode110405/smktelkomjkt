@@ -2,7 +2,7 @@
     <div class="container px-5 md:px-10">
       <div class="flex justify-between md:items-center">
         <div class="brand">
-          <a href="/rpl"><img src="img/smktelkomjkt.jpg" class="w-28 h-auto" alt=""></a>
+          <a href="/telkomjkt"><img src="../img/smktelkomjkt.jpg" class="w-28 h-auto" alt=""></a>
         </div>
 
         <button class="open block md:hidden text-gray-400 hover:text-gray-50"><i class="fas fa-bars"></i></button>
